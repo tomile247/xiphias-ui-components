@@ -1,6 +1,3 @@
-alert('xiphias-ui-components');
-
-
 import './index.css';
 import "./components/xiphias-banner-slider";
 
