@@ -6,14 +6,17 @@ export default defineConfig({
             entry: './src/index.ts',
             name: 'XiphiasComponents',
             fileName: (format) => `index.${format}.js`,
-            formats: ['es', 'umd']
+            formats: ['es', 'umd'],
         },
         rollupOptions: {
             output: {
                 globals: {
-                    lit: 'LitElement'
-                }
-            }
-        }
-    }
+                    lit: 'LitElement',
+                },
+                assetFileNames: 'style.css',
+            },
+        },
+
+        cssCodeSplit: false,
+    },
 });

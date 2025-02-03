@@ -1,8 +1,4 @@
-import './index.css';
-import "./components/xiphias-banner-slider";
-import "./components/xiphias-blog-post.ts";
-import {register} from "swiper/element";
+import './style.css';
 
-export {XiphiasBannerSlider} from './components/xiphias-banner-slider';
 export {XiphiasBlogPost} from './components/xiphias-blog-post.ts';
-register()
+export {XiphiasProductItem} from './components/xiphias-product-item.ts';

@@ -1,30 +1,36 @@
 {
   "name": "xiphias-ui-components",
-  "version": "0.0.7",
+  "version": "0.0.16",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "style": "dist/style.css",
   "type": "module",
   "exports": {
     ".": {
+      "style": "./dist/style.css",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
-      "require": "./dist/index.umd.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.umd.js"
+    },
+    "./style.css": {
+      "default": "./dist/style.css"
     }
   },
   "files": [
     "dist/index.es.js",
     "dist/index.umd.js",
-    "dist/index.d.ts"
+    "dist/index.d.ts",
+    "dist/style.css"
   ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "lit": "^3.2.1",
-    "swiper": "^11.2.1"
+    "lit": "^3.2.1"
   },
   "devDependencies": {
     "typescript": "~5.6.2",

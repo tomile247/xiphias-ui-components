@@ -17,10 +17,11 @@ export class XiphiasBlogPost extends LitElement {
     static styles = css`
         :host {
             display: flex;
+            max-width: 30%;
         }
         
         .xiphias-blog-post__wrapper {
-            border: 1px solid black;
+            border: 1px solid var(--color-border);
             border-radius: 25px;
             display: flex;
             flex-direction: column;
@@ -33,11 +34,39 @@ export class XiphiasBlogPost extends LitElement {
         .xiphias-blog-post__wrapper:hover {
             opacity: 0.7;
         }
+
+        .xiphias-blog-post__date {
+            color: var(--color-green);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
         
         .button {
-            width: 50%;
-            padding: 10px;
-            border: 1px solid black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-main);
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--color-white);
+            height: 45px;
+        }
+
+        .xiphias-blog-post__title {
+            color: var(--color-text-primary);
+            font-size: 25px;
+        }
+        
+        .xiphias-blog-post__description {
+            color: var(--color-text-secondary);
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
         
