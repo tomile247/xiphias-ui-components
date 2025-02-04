@@ -17,6 +17,10 @@ export class XiphiasBlogPost extends LitElement {
     static styles = css`
         :host {
             display: flex;
+            flex-basis: auto;
+            flex-grow: 1;
+            flex-shrink: 1;
+            font-family: var(--font-family-primary);
         }
         
         .xiphias-blog-post__wrapper {
@@ -25,6 +29,7 @@ export class XiphiasBlogPost extends LitElement {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
             padding: 16px;
             cursor: pointer;
@@ -55,10 +60,17 @@ export class XiphiasBlogPost extends LitElement {
             color: var(--color-white);
             height: 45px;
         }
+        
+        .xiphias-blog-post__image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
 
         .xiphias-blog-post__title {
             color: var(--color-text-primary);
             font-size: 25px;
+            text-align: center;
         }
         
         .xiphias-blog-post__description {
@@ -75,10 +87,7 @@ export class XiphiasBlogPost extends LitElement {
     render() {
         return html`
             <div class="xiphias-blog-post__wrapper">
-                <picture>
-                    <source srcset="${this.blogImage}">
-                    <img src="${this.blogImage}">
-                </picture>
+                <img class="xiphias-blog-post__image" src="${this.blogImage}">
                 <p class="xiphias-blog-post__date">${this.blogDate}</p>
                 <p class="xiphias-blog-post__title">${this.blogTitle}</p>
                 <p class="xiphias-blog-post__description">${this.blogDescription}</p>

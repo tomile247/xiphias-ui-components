@@ -6,6 +6,6 @@
     --color-text-primary: #444444;
     --color-text-secondary: #8C8C8C;
 
-    --font-primary: 'Roboto', sans-serif;
-    --font-secondary: 'Arial', sans-serif;
+    --color-button-primary: var(--color-main);
+    --color-button-secondary: #F1F1F1;
 }

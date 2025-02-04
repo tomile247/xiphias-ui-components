@@ -16,20 +16,26 @@ export class XiphiasProductItem extends LitElement {
 
     static styles = css`
         :host {
-        
+            font-family: var(--font-family-primary);
         }
         button {
             all: unset;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: var(--color-main);
+            background-color: var(--color-button-secondary);
             text-decoration: none;
             font-weight: bold;
-            color: var(--color-white);
+            color: var(--color-text-secondary);
             height: 45px;
             width: 80%;
             text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--color-button-primary);
+            color: var(--color-white);
         }
         
         .xiphias-product-item__wrapper {
@@ -38,12 +44,14 @@ export class XiphiasProductItem extends LitElement {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
         }
 
         .xiphias-product-item__center {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 10px
         }
         
         .xiphias-product-item__bottom {

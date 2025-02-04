@@ -5,15 +5,12 @@ import {customElement, property} from 'lit/decorators.js';
 export class XiphiasFooterLogo extends LitElement {
     static styles = css`        
         .footer-logo {
-        display: flex;
-        padding-left: 50px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-        .footer-logo {
-            margin-bottom: 20px;
+            display: flex;
+            padding-left: 50px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                
         }
     `;
 

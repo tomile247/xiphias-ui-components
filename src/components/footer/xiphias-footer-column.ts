@@ -3,11 +3,17 @@ import {customElement} from 'lit/decorators.js';
 
 @customElement('xiphias-footer-column')
 export class XiphiasFooterColumn extends LitElement {
-    static styles = css`        .footer-column {
-        flex: 2 1 100px;
-        justify-content: center;
-        align-items: center;
-    }
+    static styles = css`        
+    
+        :host {
+            font-family: var(--font-family-primary);
+        }
+        
+        .footer-column {
+            flex: 2 1 100px;
+            justify-content: center;
+            align-items: center;
+        }
 
         .footer-column-wrapper {
             display: flex;
@@ -18,7 +24,7 @@ export class XiphiasFooterColumn extends LitElement {
         }
 
         .footer-column-title {
-            color: #444444;
+            color: var(--color-text-primary);
             margin-bottom: 7px;
             font-size: 14px;
             text-transform: uppercase;

@@ -3,7 +3,13 @@ import {customElement, property} from 'lit/decorators.js';
 
 @customElement('xiphias-footer-end')
 export class XiphiasFooterEnd extends LitElement {
-    static styles = css`        .footer-end {
+    static styles = css` 
+        
+        :host {
+            width: 100%;    
+        }
+        
+        .footer-end {
         width: 100%;
         background-color: #444444;
         color: #a0a0a0;
@@ -21,12 +27,7 @@ export class XiphiasFooterEnd extends LitElement {
             color: #ededed;
             text-decoration: none;
         }
-
-        .footer-end > div:nth-child(2):before, .footer-end > div:nth-child(3):before {
-            content: "\\2022";
-            font-size: 1rem;
-            margin-right: 0.5rem;
-        }    `;
+    `;
     @property({type: String}) poweredByText = 'Powered by';
     @property({type: String}) poweredByUrl = 'https://www.nopcommerce.com/';
     @property({type: String}) designedByText = 'Designed by';
