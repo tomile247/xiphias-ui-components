@@ -1,0 +1,29 @@
+footer {
+    border-top: 3px solid #f6f6f6;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    max-width: 100vw;
+}
+
+.custom-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    padding: 50px;
+    display: flex;
+    gap: 100px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 150px;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: dimgray;
+}

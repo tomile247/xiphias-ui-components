@@ -17,7 +17,6 @@ export class XiphiasBlogPost extends LitElement {
     static styles = css`
         :host {
             display: flex;
-            max-width: 30%;
         }
         
         .xiphias-blog-post__wrapper {
@@ -42,6 +41,7 @@ export class XiphiasBlogPost extends LitElement {
             align-items: center;
             font-size: 14px;
             font-weight: bold;
+            text-transform: uppercase;
         }
         
         .button {
